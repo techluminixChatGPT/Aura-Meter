@@ -29,8 +29,8 @@ public class UserActivityLog {
     
     private String failureReason; // If success = FALSE
     
-    @Column(columnDefinition = "jsonb")
-    private String additionalData; // Flexible JSON data storage
+    // @Column(columnDefinition = "jsonb")
+    // private String additionalData; // Flexible JSON data storage
     
     @Column(updatable = false)
     private LocalDateTime createdAt;
@@ -75,8 +75,8 @@ public class UserActivityLog {
     public String getFailureReason() { return failureReason; }
     public void setFailureReason(String failureReason) { this.failureReason = failureReason; }
     
-    public String getAdditionalData() { return additionalData; }
-    public void setAdditionalData(String additionalData) { this.additionalData = additionalData; }
+    // public String getAdditionalData() { return additionalData; }
+    // public void setAdditionalData(String additionalData) { this.additionalData = additionalData; }
     
     public LocalDateTime getCreatedAt() { return createdAt; }
     public void setCreatedAt(LocalDateTime createdAt) { this.createdAt = createdAt; }
